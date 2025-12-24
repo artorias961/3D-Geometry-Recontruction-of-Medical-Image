@@ -1,5 +1,3 @@
-# Disclaimer
-All patient images have been removed for privacy. Only one representative image is displayed.
 
 # Objective of the Project
 3D Geometry Reconstruction of Medial Images 
@@ -11,10 +9,52 @@ Advisor: Mathias Brieu, Ph.D
 Students: Stephanie Reyes, Sarahi Munoz, Christopher Morales, Paul Bahena 
 
 
-This project focused on using numerical tools to analyze medical images and construct a 3D model of the organs present in the image. The goal was to provide a detailed 3D model that could be easily manipulated for use in the medical field. The focus was on Magnetic Resonance Images (MRI) of the pelvic anatomy of women patients, with an emphasis on three main organs, the bladder, vagina, and rectum. To construct the 3D models from the MRI scans computer vision was utilized as the main tool for image analysis. An object detection tool was developed and trained to detect, differentiate, and label the bladder, vagina, and rectum. These same images were converted to a greyscale, which allowed the organs of interest to be isolated as well as identified by drawing contours around them. An ellipse was then fitted into each contour, and from these ellipses certain parameters could be obtained. Including the center point (x, y, z), the length (l), height (h) and orientation (n). This data can then be utilized to create a 3D CAD model of the patients’ pelvic organs.  
+This project focused on using numerical tools to analyze medical images and construct a 3D model of the organs present in the image. The goal was to provide a detailed 3D model that could be easily manipulated for use in the medical field. The focus was on Magnetic Resonance Images (MRI) of the pelvic anatomy of women patients, with an emphasis on three main organs, the bladder, vagina, and rectum. To construct the 3D models from the MRI scans computer vision was utilized as the main tool for image analysis. An object detection tool was developed and trained to detect, differentiate, and label the bladder, vagina, and rectum. These same images were converted to a greyscale, which allowed the organs of interest to be isolated as well as identified by drawing contours around them. An ellipse was then fitted into each contour, and from these ellipses certain parameters could be obtained. Including the center point (x, y, z), the length (l), height (h) and orientation (n). This data can then be utilized to create a 3D CAD model of the patients’ pelvic organs.  As the follwing image shows:
 
-All numerical tools developed are based on open-source software (python, open-CV, makense.ai, yolo, and FreeCAD). 
+<div align="center">
 
+  <p>
+    <img width="640" height="640"
+         src="https://github.com/user-attachments/assets/f39f6a10-e9c4-4595-96f0-85ed7c4947ba" /><br>
+    <em>(a) Original sagittal MRI slice of the pelvic anatomy used as input.</em>
+  </p>
+</div>
+  
+This image shows a sagittal Magnetic Resonance Imaging slice of the female pelvic anatomy without any annotations. The anatomical structures are visible in grayscale, providing a clear reference image for comparison with later annotated figures.
+
+
+<div align="center">
+  <p>
+    <img width="640" height="640"
+         src="https://github.com/user-attachments/assets/c7574289-10c2-4074-bf3c-947eb2a788c9" /><br>
+    <em>(b) Detected organ contours with ellipse fitting applied to the bladder, vagina, and rectum.</em>
+  </p>
+</div>
+This image displays the same sagittal MRI slice with green ellipse outlines overlaid on visible pelvic organs. Center points are marked within each ellipse to indicate the approximate location of the organs within the image.
+
+  
+<div align="center">
+  <p>
+    <img width="640" height="640"
+         src="https://github.com/user-attachments/assets/25d5a963-b0df-4063-acf9-8621d5d75a30" /><br>
+    <em>(c) Visualization of extracted ellipse center points and labeled organ indices.</em>
+  </p>
+</div>
+This image includes green ellipse outlines and center points, along with numerical labels placed near each ellipse. The labels are used to visually distinguish between different pelvic organs within the MRI slice.
+
+
+<div align="center">
+  <p>
+    <img width="640" height="640"
+         src="https://github.com/user-attachments/assets/38196413-06dc-4530-af37-b8b77ed3d7cb" /><br>
+    <em>(d) Reference MRI image shown without annotations for comparison.</em>
+  </p>
+
+</div>
+This image shows ellipse outlines, center points, and numerical values overlaid on the MRI slice. The displayed values represent geometric properties associated with each ellipse, such as position, size, and orientation, and are included to visually demonstrate how organ geometry is represented in the image. All numerical tools developed are based on open-source software (python, open-CV, makense.ai, yolo, and FreeCAD). 
+
+# Disclaimer
+All patient images have been removed for privacy. Only one representative image is displayed.
 
 
 # Installing Programs 
