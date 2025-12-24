@@ -1,5 +1,5 @@
 # Disclaimer
-Note that all the images for any patient has been removed. You will only be shown only one image.
+All patient images have been removed for privacy. Only one representative image is displayed.
 
 # Objective of the Project
 3D Geometry Reconstruction of Medial Images 
